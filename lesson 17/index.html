@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="countDown">00:00
+      </div>
+      <div class="buttons">
+        <button class="button startGame">Start game!</button>
+        <button class="button checkResult">Check result</button>
+        <button class="button newGame">New game!</button>
+      </div>
+      <div class="container">
+        <div id="pieceContainer">
+        </div>
+
+        <div id="puzzleContainer">
+        </div>
+      </div>
+
+      <div class="modalLost hidden">
+        <h2>It's a pity, but you lost.</h2>
+        <button class="button close1">Close</button>
+      </div>
+
+      <div class="modalSure hidden">
+        <h2>You still have time, you sure?</h2><span class="timerLeft">00:05</span>
+        <div>
+          <button class="button close">Close</button>
+          <button class="button checkImg">Check</button>
+        </div>
+      </div>
+
+      <div class="modalWell hidden">
+        <h2>Woohoo, well done, you did it!</h2>
+        <button class="button close">Close</button>
+      </div>
+    </div>
+  </main>
+  <script src="jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
